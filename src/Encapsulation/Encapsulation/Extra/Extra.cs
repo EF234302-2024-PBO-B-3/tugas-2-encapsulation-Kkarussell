@@ -4,9 +4,9 @@ using System.Text.RegularExpressions;
 
 namespace Encapsulation.Extra
 {
-    public class Extras
+    public class SteamAccount
     {
-        private string _username = "Unknwon";
+        private string _username = "Unknown";
         private string _email = "Unknown";
         private double _balance;
         private List<string> _ownedGames;
@@ -39,7 +39,7 @@ namespace Encapsulation.Extra
 
         public List<string> OwnedGames => _ownedGames;
 
-        public Extra(string username, string email, double balance)
+        public SteamAccount(string username, string email, double balance) // Ubah di sini
         {
             Username = username;
             Email = email;

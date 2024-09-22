@@ -55,7 +55,7 @@ public class Program
 
         // Extra
         Console.WriteLine("\nDemonstrasi Kelas SteamAccount:");
-        var steamAccount = new Extras("Gamer123", "gamer@example.com", 50.0);
+        var steamAccount = new SteamAccount("Gamer123", "gamer@example.com", 50.0);
         steamAccount.Deposit(20.0);
         steamAccount.Withdraw(10.0);
         steamAccount.AddGame("Cyberpunk 2077");
