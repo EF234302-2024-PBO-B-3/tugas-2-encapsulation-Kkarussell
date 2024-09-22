@@ -3,6 +3,7 @@ using Encapsulation.Employment;
 using System;
 using Encapsulation.Calendar;
 using Encapsulation.Banking;
+using Encapsulation.Extra;
 
 namespace Encapsulation;
 
@@ -53,6 +54,13 @@ public class Program
         Console.WriteLine($"Balance after withdrawal: {account.GetBalance()}");
 
         // Extra
-
+        Console.WriteLine("\nDemonstrasi Kelas SteamAccount:");
+        var steamAccount = new Extras("Gamer123", "gamer@example.com", 50.0);
+        steamAccount.Deposit(20.0);
+        steamAccount.Withdraw(10.0);
+        steamAccount.AddGame("Cyberpunk 2077");
+        steamAccount.AddGame("The Witcher 3");
+        steamAccount.AddGame("Cyberpunk 2077");
+        steamAccount.DisplayAccountInfo();
     }
 }
