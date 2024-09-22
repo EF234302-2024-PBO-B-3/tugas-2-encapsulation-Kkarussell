@@ -40,10 +40,9 @@ namespace Encapsulation.Employment
 
         public void RaiseSalary(int raisePercentage)
         {
-            if (raisePercentage <= 20)
+            if (raisePercentage>0 && raisePercentage<=20)
             {
-                double raiseAmount = _monthlySalary * (raisePercentage / 100.0);
-                _monthlySalary += raiseAmount;
+                MonthlySalary=(MonthlySalary+ raisePercentage*MonthlySalary/100);
             }
         }
 
